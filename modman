@@ -1,0 +1,5 @@
+# modman file for paj_customersales
+app/code/community/PAJ/Customersales app/code/community/PAJ/Customersales/
+app/etc/modules/PAJ_Customersales.xml app/etc/modules/Customersales.xml
+app/design/adminhtml/default/default/layout/paj/paj_customersales.xml   app/design/adminhtml/default/default/layout/paj/paj_customersales.xml
+app/design/adminhtml/default/default/template/paj/customersales/customersales.phtml    app/design/adminhtml/default/default/template/paj/customersales/customersales.phtml
