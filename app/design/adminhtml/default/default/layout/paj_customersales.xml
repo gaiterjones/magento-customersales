@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <customersales_adminhtml_customersales_index >
+        <reference name="content">
+            <block type="customersales/adminhtml_customersales" template="paj/customerales/customersales.phtml" as="index" name="customersales" />
+        </reference>		
+    </customersales_adminhtml_customersales_index >
+</layout>

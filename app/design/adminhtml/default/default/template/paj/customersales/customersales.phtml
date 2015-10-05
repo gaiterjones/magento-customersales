@@ -1,0 +1,29 @@
+<?php
+
+$_helper=Mage::helper('customersales/Data');
+
+$_collection=$_helper->getCustomerByVATID();
+$_fromDate=$_helper::PAJ_CUSTOMERSALES_FROM;
+$_toDate=$_helper::PAJ_CUSTOMERSALES_TO;
+$_data=$_helper->getTotalSales($_collection);
+
+?>
+<div>
+	<p>Customer Sales (with vat id) from <?php echo $_fromDate; ?> to <?php echo $_toDate; ?></p>
+	<p>Set date range in app/code/community/PAJ/Customersales/Helper/Data.php</p>
+	<table id="customersales" class="data" cellpadding="0" cellspacing="0">
+		<thead>
+		<tr>
+			<th><?php echo implode("</th><th>", $_helper->getDataHeader()); ?></th>
+		</tr>
+		</thead>
+		<tbody>
+	<?php foreach ($_data as $_row): ?>
+		<tr>
+			<td><?php echo implode("</td><td>", $_row); ?></td>
+		</tr>
+	<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>
+<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>"  />

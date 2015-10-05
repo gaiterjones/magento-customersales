@@ -1,0 +1,20 @@
+<config>
+        <menu>
+            <sales>
+                <children>
+                    <order_items translate="title">
+                        <title>Customer Sales by VAT ID</title>
+                        <sort_order>20</sort_order>
+                        <action>adminhtml/customersales/index</action>
+                    </order_items>
+                </children>
+            </sales>
+        </menu>
+	<layout>
+		<updates>
+			<customersales>
+				<file>paj/paj_customersales.xml</file>
+			</customersales>
+		</updates>
+	</layout>    
+</config> 
