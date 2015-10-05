@@ -11,7 +11,7 @@ $_data=$_helper->getTotalSales($_collection);
 <div>
 	<p>Customer Sales (with vat id) from <?php echo $_fromDate; ?> to <?php echo $_toDate; ?></p>
 	<p>Set date range in app/code/community/PAJ/Customersales/Helper/Data.php</p>
-	<?php if count($_data) > 0): ?>
+	<?php if (count($_data) > 0): ?>
 	<table id="customersales" class="data" cellpadding="0" cellspacing="0">
 		<thead>
 		<tr>
